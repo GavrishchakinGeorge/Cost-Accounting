@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сost Accounting</title>
+  </head>
+  <body class="background">
+    <div>
+      <main>
+        <h1 class="content">My costs</h1>
+        <div class="inputMain" name="Form">
+          <input
+            type="text"
+            class="mainInputShop item"
+            id="mainInputShop"
+            pattern="^[a-zA-Z-А-Яа-яЁё\s]+$"
+            placeholder="Where were the funds spent"
+          />
+          <input
+            type="number"
+            class="mainInputMoney item"
+            id="mainInputMoney"
+            pattern="^[0-9]+$"
+            placeholder="How much was spent"
+            required
+          />
+            <button type="button" class="inputButton item" id="inputButton">
+              Add
+            </button>
+        </div>
+        </div>
+        <div id="costList"></div>
+        <div class="TotalMoney" id="total-money"></div>
+      </main>
+    </div>
+
+    <!-- 
+        создаст 7 li в ul и внутри li span с классом hello, 
+        $ - счетчик
+        ul>li*7>span.hello$ 
+    -->
+  </body>
+  <script src="./main.js"></script>
+</html>

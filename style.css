@@ -1,37 +1,12 @@
 * {
   margin: 0;
-  /* определяет внешний отступ на всех четырёх сторонах элемента. */
   font-family: 'Montserrat', sans-serif;
-  /* 
-    определяет приоритетный список из одного или
-    нескольких названий семейства шрифтов и/или общее имя шрифта для выбранного элемента.
-    */
   font-size: 20px;
-  /* определяет размер шрифта. */
   line-height: 2;
-  /* Межстрочный отступ */
   color: #333;
 }
-/* Background */
-.background {
-  width: 100%;
-  height: 100%;
-  background: url(../images/background.jpg) center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
-/* Ввод данных */
-.inputMain {
-  display: grid;
-  grid-template-columns: 0.2fr 0.2fr 0.05fr;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-/* Заголовок */
+/* Header */
 .content {
   display: flex;
   justify-content: center;
@@ -41,14 +16,31 @@
   font-size: 40px;
 }
 
-/* Инпут ввода магазина */
+/* Background */
+.background {
+  width: 100%;
+  height: 100%;
+  background: url(../images/background.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Input */
+.inputMain {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 0.2fr 0.2fr 0.05fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
 .mainInputShop {
   border-radius: 15px;
   border: 3px solid rgb(168, 89, 89);
   padding-left: 15px;
 }
 
-/* Инпут ввода суммы денег */
 .mainInputMoney {
   border-radius: 15px;
   border: 3px solid rgb(168, 89, 89);
@@ -62,7 +54,7 @@
   outline-offset: 0;
 }
 
-/* КНопка для добавления магазина и суммы денег */
+/* Input botton */
 .inputButton {
   border-radius: 15px;
   border: none;
@@ -79,7 +71,7 @@
   transition-delay: 0.1s;
   border: none;
 }
-/* Выходящий список */
+/* List out */
 .costListOutput {
   display: grid;
   grid-template-columns: repeat(3, 0.25fr) 0.2fr;
@@ -89,7 +81,7 @@
   justify-content: center;
 }
 
-/* Обертка текста */
+/* Wrapper of text */
 .listOutput {
   border-radius: 15px;
   align-items: center;
@@ -97,7 +89,7 @@
   border: 3px solid rgb(168, 89, 89);
 }
 
-/* Обертка кнопок */
+/* Wrapper buttons */
 .divButton {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
@@ -148,8 +140,6 @@
     margin-top: 10px;
     margin-right: 30px auto;
 }
-
-
 
 @media screen and (max-width: 1120px) {
   * {

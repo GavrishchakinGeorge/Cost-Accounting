@@ -8,7 +8,6 @@ window.addEventListener("load", () => {
   buttonInput.addEventListener('click', costHandler);
 
   function costHandler(event) {
-
     const shopText = shopInput.value;
     const moneyText = moneyInput.value;
 
@@ -83,7 +82,6 @@ window.addEventListener("load", () => {
       costList.removeChild(listContent);
     });
 
-    //
     shopOutput.addEventListener("dblclick", () => {
       if (shopOutput.readOnly === true) {
         shopOutput.removeAttribute("readonly");
@@ -119,24 +117,19 @@ window.addEventListener("load", () => {
       costList.appendChild(listContent);
     }
 
-    // Очищаем поле ввода
     costList.value = "";
 
-    // Фокус на поле ввода кнопкой
     costList.focus();
     
-    // Очистка поля ввода 
     const resetForm = () => {
       if (moneyText !== "" && shopText !== "") {
         shopInput.value = "";
         moneyInput.value = "";
       }
     }
-    buttonInput.onclick = resetForm();
 
+    buttonInput.onclick = resetForm();
     mainInputShop.focus();
-    // Total
     totalMoney.value = 0;
   }
-
 });
